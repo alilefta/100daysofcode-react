@@ -1,38 +1,51 @@
 .App {
-  text-align: center;
+	width: 100%;
+}
+.App .room {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	width: 400px;
+	height: 400px;
+	border: 5px solid #1d1d1d;
+	margin: 20px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.room .upper-part,
+.lower-part {
+	height: 200px;
+	display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.room .upper-part {
+	justify-content: space-between;
+	padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.room .lower-part {
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.lamp {
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	border: 1px solid grey;
+	background-color: #ccc;
+	box-shadow: inset 1px 2px 14px 8px #b3aeae;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+	width: 97px;
+	height: 43px;
+	font-size: 1.1rem;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.lampOn {
+	background-color: #e8e835;
 }
